@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "test:start": "jest --watchAll",
+    "test:watch": "jest --watchAll",
     "dev": "nodemon server.js"
   },
   "keywords": [],
@@ -17,5 +17,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
   }
 }

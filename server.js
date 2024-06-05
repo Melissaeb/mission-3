@@ -52,6 +52,10 @@ const safetySettings = [
   },
 ];
 
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+
 app.post("/gemini", async (req, res) => {
   //const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" })
 
@@ -79,3 +83,5 @@ app
       console.log(`Server Errors`, error);
     }
   });
+
+module.exports = app;
